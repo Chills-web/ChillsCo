@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chills Shop – Album Keychains</title>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fcefee;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: #b94b6f;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: black;
+      padding: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 20px;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .main-title {
+      text-align: center;
+      margin: 40px 20px 10px;
+      font-size: 2.5em;
+      color: #b94b6f;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+
+    .gallery-item {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #b94b6f;
+    }
+
+    section p {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-weight: bold;
+      border: 2px solid black;
+      background: white;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="dropdown">
+        <a href="#about">ABOUT</a>
+        <div class="dropdown-content">
+          <a href="#mission">MISSION & HISTORY</a>
+          <a href="#board">BOARD & STAFF</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#support">SUPPORT</a>
+        <div class="dropdown-content">
+          <a href="#ways">WAYS TO SUPPORT</a>
+          <a href="#supporters">SUPPORTERS</a>
+        </div>
+      </div>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <h1 class="main-title">🎵 Chills Shop – Album Keychains</h1>
+  <p class="subtitle">Nostalgic keychains featuring your favorite artists. Handmade with care.</p>
+
+  <div class="gallery">
+    <div class="gallery-item"><img src="Billie.jpg" alt="Billie"></div>
+    <div class="gallery-item"><img src="Drake.jpg" alt="Drake"></div>
+    <div class="gallery-item"><img src="Kanye.jpg" alt="Kanye"></div>
+    <div class="gallery-item"><img src="Kendrick.jpg" alt="Kendrick"></div>
+    <div class="gallery-item"><img src="Lady.jpg" alt="Lady"></div>
+    <div class="gallery-item"><img src="Morgan.jpg" alt="Morgan"></div>
+    <div class="gallery-item"><img src="Post.jpg" alt="Post"></div>
+    <div class="gallery-item"><img src="Rihanna.jpg" alt="Rihanna"></div>
+    <div class="gallery-item"><img src="Taylor.jpg" alt="Taylor"></div>
+    <div class="gallery-item"><img src="Tyler.jpg" alt="Tyler"></div>
+    <div class="gallery-item"><img src="Weeknd.jpg" alt="Weeknd"></div>
+  </div>
+
+  <section id="mission">
+    <h2>Mission & History</h2>
+    <p>Our mission is to create meaningful, nostalgic keepsakes inspired by music and culture. Chills Shop started as a passion project and evolved into a collectible art store fueled by heart, hustle, and a love of timeless albums.</p>
+  </section>
+
+  <section id="board" style="max-width: 1200px; margin: 60px auto; display: flex; gap: 40px; align-items: flex-start; font-family: 'Segoe UI', sans-serif;">
+    <div style="flex-shrink: 0;">
+      <img src="Brandon.jpg" alt="Brandon Cavazos" style="width: 320px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1);" />
+    </div>
+    <div>
+      <h2 style="margin-bottom: 10px; font-size: 24px; color: #b94b6f;">BRANDON CAVAZOS</h2>
+      <p style="line-height: 1.6; margin-bottom: 15px; font-size: 1.1em;">
+        Brandon Cavazos is a Chicago-based creator, computer science student, and the founder of Chills Shop. With over 150,000 followers on YouTube under the name <strong>CHILLS_YT</strong>, Brandon brings storytelling, nostalgia, and style together through handcrafted collectibles and digital content.
+      </p>
+      <p style="line-height: 1.6; margin-bottom: 15px; font-size: 1.1em;">
+        From coding and design to customer service and creative direction, Brandon wears many hats. His mission is to create thoughtful, expressive items that spark emotion — while inspiring others to believe in themselves and build something of their own.
+      </p>
+      <p style="line-height: 1.6; font-size: 1.1em;">
+        <strong>Responsibilities:</strong><br>
+        – Founder & Product Designer<br>
+        – Customer Service & Fulfillment<br>
+        – Branding & Marketing Lead<br>
+        – Community Engagement
+      </p>
+    </div>
+  </section>
+
+  <section id="ways">
+    <h2>Ways to Support</h2>
+    <p>Support us by sharing our site, purchasing a keychain, following on social media, or sending us a kind word. Every gesture keeps the beat going. 💖</p>
+  </section>
+
+  <section id="supporters">
+    <h2>Supporters</h2>
+    <p>To our early supporters — thank you for believing in our vision. Your encouragement is the reason we continue to grow. 🙏</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:thechillsco@gmail.com">thechillsco@gmail.com</a></p>
+    <form action="https://formspree.io/f/xwpbevjq" method="POST">
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Chills Shop. All rights reserved.
+  </footer>
+
+</body>
+</html>

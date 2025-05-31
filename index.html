@@ -2,227 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chills Shop – Album Keychains</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fcefee;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #fffafc;
       color: #333;
     }
+
     header {
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      background-color: #fcefee;
       padding: 20px 0;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    nav a {
-      color: black;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: #b94b6f;
-    }
-    .dropdown {
-      position: relative;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      top: 40px;
-      left: 0;
-      background-color: black;
-      padding: 10px 0;
-      border-radius: 5px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      display: block;
-      padding: 8px 20px;
-      color: white;
-      text-decoration: none;
-    }
-    .dropdown-content a:hover {
-      background-color: #333;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .main-title {
       text-align: center;
-      margin: 40px 20px 10px;
-      font-size: 2.5em;
-      color: #b94b6f;
+      border-bottom: 3px solid #b94b6f;
     }
-    .subtitle {
-      text-align: center;
+
+    header h1 {
+      color: #b94b6f;
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
       font-size: 1.2em;
-      color: #666;
-      margin-bottom: 40px;
+      color: #555;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 0 20px 40px;
+      padding: 40px 20px;
     }
+
     .gallery-item {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       overflow: hidden;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
+
     .gallery-item:hover {
       transform: scale(1.05);
     }
+
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 12px;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+
+    .donation-section {
+      background: #fcefee;
+      padding: 50px 20px;
+      text-align: center;
     }
-    section h2 {
+
+    .donation-section h2 {
+      color: #b94b6f;
       font-size: 2em;
       margin-bottom: 20px;
-      color: #b94b6f;
     }
-    section p {
-      font-size: 1.1em;
-      color: #444;
-    }
-    form input, form textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-    }
-    button {
-      padding: 10px 25px;
-      font-weight: bold;
-      border: 2px solid black;
-      background: white;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 0 20px;
-      font-size: 0.9em;
-      color: #999;
-    }
-    .donate-links a {
+
+    .donation-links a {
       display: inline-block;
       margin: 10px;
-      padding: 12px 24px;
-      border-radius: 6px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background-color: #0070ba;
+      color: white;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s ease;
     }
-    .paypal { background-color: #0070ba; color: white; }
-    .cashapp { background-color: #00c244; color: white; }
-    .kofi { background-color: #ff5f5f; color: white; }
-    .bmc { background-color: #ffdd00; color: black; }
+
+    .donation-links a:hover {
+      background-color: #005f9e;
+    }
+
+    footer {
+      background-color: #fcefee;
+      padding: 20px;
+      text-align: center;
+      border-top: 3px solid #b94b6f;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-
   <header>
-    <nav>
-      <div class="dropdown">
-        <a href="#about">ABOUT</a>
-        <div class="dropdown-content">
-          <a href="#mission">MISSION & HISTORY</a>
-          <a href="#board">BOARD & STAFF</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#support">SUPPORT</a>
-        <div class="dropdown-content">
-          <a href="#ways">WAYS TO SUPPORT</a>
-          <a href="#supporters">SUPPORTERS</a>
-        </div>
-      </div>
-      <a href="#contact">CONTACT</a>
-    </nav>
+    <h1>🎵 Chills Shop – Album Keychains</h1>
+    <p>Handmade nostalgia. Your favorite albums. One tiny masterpiece at a time.</p>
   </header>
-
-  <h1 class="main-title">🎵 Chills Shop – Album Keychains</h1>
-  <p class="subtitle">Nostalgic keychains featuring your favorite artists. Handmade with care.</p>
 
   <div class="gallery">
     <div class="gallery-item"><img src="Billie.jpg" alt="Billie"></div>
     <div class="gallery-item"><img src="Drake.jpg" alt="Drake"></div>
     <div class="gallery-item"><img src="Kanye.jpg" alt="Kanye"></div>
     <div class="gallery-item"><img src="Kendrick.jpg" alt="Kendrick"></div>
-    <div class="gallery-item"><img src="Lady.jpg" alt="Lady"></div>
+    <div class="gallery-item"><img src="Lady.jpg" alt="Lady Gaga"></div>
     <div class="gallery-item"><img src="Morgan.jpg" alt="Morgan"></div>
-    <div class="gallery-item"><img src="Post.jpg" alt="Post"></div>
+    <div class="gallery-item"><img src="Post.jpg" alt="Post Malone"></div>
     <div class="gallery-item"><img src="Rihanna.jpg" alt="Rihanna"></div>
-    <div class="gallery-item"><img src="Taylor.jpg" alt="Taylor"></div>
+    <div class="gallery-item"><img src="Taylor.jpg" alt="Taylor Swift"></div>
     <div class="gallery-item"><img src="Tyler.jpg" alt="Tyler"></div>
-    <div class="gallery-item"><img src="Weeknd.jpg" alt="Weeknd"></div>
+    <div class="gallery-item"><img src="Weeknd.jpg" alt="The Weeknd"></div>
   </div>
 
-  <section id="mission">
-    <h2>Mission & History</h2>
-    <p>Our mission is to create meaningful, nostalgic keepsakes inspired by music and culture. Chills Shop started as a passion project and evolved into a collectible art store fueled by heart, hustle, and a love of timeless albums.</p>
-  </section>
-
-  <section id="board">
-    <h2>Board & Staff</h2>
-    <p>Meet the creative minds behind Chills Shop — a small but passionate team committed to design, innovation, and authentic connection through art.</p>
-  </section>
-
-  <section id="ways">
-    <h2>Ways to Support</h2>
-    <p>If you love what we do and want to help, here are ways you can support our work. Your support keeps us going 💖</p>
-    <div class="donate-links">
-      <a href="https://www.paypal.com/donate/?hosted_button_id=F493UKMVQKH4E" class="paypal" target="_blank">Donate via PayPal</a>
-      <a href="https://cash.app/$RealChillsCo" class="cashapp" target="_blank">Support on CashApp</a>
-      <a href="https://ko-fi.com/chillsco" class="kofi" target="_blank">Buy me a Ko-Fi</a>
-      <a href="https://www.buymeacoffee.com/ChillsCo" class="bmc" target="_blank">Buy me a Coffee</a>
+  <section class="donation-section">
+    <h2>Support Chills Shop ✨</h2>
+    <div class="donation-links">
+      <a href="https://www.paypal.com/donate/?hosted_button_id=F493UKMVQKH4E" target="_blank">PayPal</a>
+      <a href="https://cash.app/$RealChillsCo" target="_blank">CashApp</a>
+      <a href="https://ko-fi.com/chillsco" target="_blank">Ko-fi</a>
+      <a href="https://buymeacoffee.com/ChillsCo" target="_blank">Buy Me a Coffee</a>
     </div>
   </section>
 
-  <section id="supporters">
-    <h2>Supporters</h2>
-    <p>To our early supporters — thank you for believing in our vision. Your encouragement is the reason we continue to grow. 🙏</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:thechillsco@gmail.com">thechillsco@gmail.com</a></p>
-    <form action="https://formspree.io/f/xwpbevjq" method="POST">
-      <input type="text" name="firstName" placeholder="First Name" required>
-      <input type="text" name="lastName" placeholder="Last Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" rows="5" placeholder="Message" required></textarea>
-      <button type="submit">SUBMIT</button>
-    </form>
-  </section>
-
   <footer>
-    &copy; 2025 Chills Shop. All rights reserved.
+    &copy; 2025 Chills Shop. Handmade with heart.
   </footer>
-
 </body>
 </html>

@@ -4,19 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chills Shop – Album Keychains</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     html {
       scroll-behavior: smooth;
     }
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #fcefee;
+      background: linear-gradient(to right, #ffe0f0, #fef6fb);
       margin: 0;
       padding: 0;
       color: #333;
     }
     header {
-      background: white;
+      background: #fff0f6;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
       position: sticky;
       top: 0;
@@ -31,17 +32,17 @@
       letter-spacing: 1px;
     }
     nav a {
-      color: black;
+      color: #d45ba7;
       text-decoration: none;
     }
     nav a:hover {
-      color: #b94b6f;
+      color: #ff79c6;
     }
     .main-title {
       text-align: center;
       margin: 40px 20px 10px;
       font-size: 2.5em;
-      color: #b94b6f;
+      color: #d45ba7;
     }
     .subtitle {
       text-align: center;
@@ -85,6 +86,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s;
+      cursor: pointer;
     }
     .gallery-item:hover {
       transform: scale(1.05);
@@ -102,9 +104,9 @@
     section h2 {
       font-size: 2em;
       margin-bottom: 20px;
-      color: #b94b6f;
+      color: #d45ba7;
     }
-    section p {
+    section p, blockquote {
       font-size: 1.1em;
       color: #444;
     }
@@ -119,7 +121,7 @@
       padding: 10px 25px;
       font-weight: bold;
       border: none;
-      background: #b94b6f;
+      background: #ff79c6;
       color: white;
       cursor: pointer;
       border-radius: 5px;
@@ -137,6 +139,24 @@
       margin-left: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+    blockquote {
+      background: #ffe5f5;
+      border-left: 5px solid #d45ba7;
+      padding: 10px 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -144,6 +164,8 @@
     <nav>
       <a href="#about">About</a>
       <a href="#support">Support</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -182,6 +204,20 @@
     </div>
   </section>
 
+  <section id="reviews">
+    <h2>What Customers Say</h2>
+    <blockquote>“Looks amazing. Feels high quality. Bought 3 already.” – Anna M.</blockquote>
+    <blockquote>“Perfect gift for my best friend. Super nostalgic!” – Jason L.</blockquote>
+    <blockquote>“Super unique and affordable. Support this artist!” – Nicole S.</blockquote>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p><strong>How long does shipping take?</strong><br>All items ship within 3–5 business days with tracking included.</p>
+    <p><strong>Are the keychains waterproof?</strong><br>Yes! They’re sealed and made to withstand light exposure to water.</p>
+    <p><strong>Can I request a custom artist or design?</strong><br>Absolutely! Message me using the contact form and I’ll see what I can do.</p>
+  </section>
+
   <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:thechillsco@gmail.com">thechillsco@gmail.com</a></p>
@@ -192,6 +228,11 @@
       <input type="text" name="subject" placeholder="Subject" required>
       <textarea name="message" rows="5" placeholder="Message" required></textarea>
       <button type="submit">Submit</button>
+    </form>
+    <form action="https://formspree.io/f/xayrgrga" method="POST">
+      <h3>Join the Newsletter</h3>
+      <input type="email" name="email" placeholder="Enter your email to join" required>
+      <button type="submit">Subscribe</button>
     </form>
   </section>
 

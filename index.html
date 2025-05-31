@@ -6,7 +6,6 @@
   <title>Chills Shop – Album Keychains</title>
   <style>
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #fcefee;
@@ -14,7 +13,6 @@
       padding: 0;
       color: #333;
     }
-
     header {
       background: white;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -22,7 +20,6 @@
       top: 0;
       z-index: 999;
     }
-
     nav {
       display: flex;
       justify-content: center;
@@ -31,21 +28,16 @@
       font-weight: bold;
       letter-spacing: 1px;
     }
-
     nav a {
       color: black;
       text-decoration: none;
-      position: relative;
     }
-
     nav a:hover {
       color: #b94b6f;
     }
-
     .dropdown {
       position: relative;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -57,37 +49,30 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       z-index: 1;
     }
-
     .dropdown-content a {
       display: block;
       padding: 8px 20px;
       color: white;
       text-decoration: none;
-      white-space: nowrap;
     }
-
     .dropdown-content a:hover {
       background-color: #333;
     }
-
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
     .main-title {
       text-align: center;
       margin: 40px 20px 10px;
       font-size: 2.5em;
       color: #b94b6f;
     }
-
     .subtitle {
       text-align: center;
       font-size: 1.2em;
       color: #666;
       margin-bottom: 40px;
     }
-
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -95,7 +80,6 @@
       gap: 20px;
       padding: 0 20px 40px;
     }
-
     .gallery-item {
       width: 150px;
       height: 150px;
@@ -104,40 +88,33 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
-
     .gallery-item:hover {
       transform: scale(1.05);
     }
-
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
-
     section h2 {
       font-size: 2em;
       margin-bottom: 20px;
       color: #b94b6f;
     }
-
     section p {
       font-size: 1.1em;
       color: #444;
     }
-
     form input, form textarea {
       width: 100%;
       margin-bottom: 15px;
       padding: 10px;
     }
-
     button {
       padding: 10px 25px;
       font-weight: bold;
@@ -145,13 +122,24 @@
       background: white;
       cursor: pointer;
     }
-
     footer {
       text-align: center;
       padding: 40px 0 20px;
       font-size: 0.9em;
       color: #999;
     }
+    .donate-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .paypal { background-color: #0070ba; color: white; }
+    .cashapp { background-color: #00c244; color: white; }
+    .kofi { background-color: #ff5f5f; color: white; }
+    .bmc { background-color: #ffdd00; color: black; }
   </style>
 </head>
 <body>
@@ -198,31 +186,20 @@
     <p>Our mission is to create meaningful, nostalgic keepsakes inspired by music and culture. Chills Shop started as a passion project and evolved into a collectible art store fueled by heart, hustle, and a love of timeless albums.</p>
   </section>
 
-  <section id="board" style="max-width: 1200px; margin: 60px auto; display: flex; gap: 40px; align-items: flex-start; font-family: 'Segoe UI', sans-serif;">
-    <div style="flex-shrink: 0;">
-      <img src="Brandon.jpg" alt="Brandon Cavazos" style="width: 320px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1);" />
-    </div>
-    <div>
-      <h2 style="margin-bottom: 10px; font-size: 24px; color: #b94b6f;">BRANDON CAVAZOS</h2>
-      <p style="line-height: 1.6; margin-bottom: 15px; font-size: 1.1em;">
-        Brandon Cavazos is a Chicago-based creator, computer science student, and the founder of Chills Shop. With over 150,000 followers on YouTube under the name <strong>CHILLS_YT</strong>, Brandon brings storytelling, nostalgia, and style together through handcrafted collectibles and digital content.
-      </p>
-      <p style="line-height: 1.6; margin-bottom: 15px; font-size: 1.1em;">
-        From coding and design to customer service and creative direction, Brandon wears many hats. His mission is to create thoughtful, expressive items that spark emotion — while inspiring others to believe in themselves and build something of their own.
-      </p>
-      <p style="line-height: 1.6; font-size: 1.1em;">
-        <strong>Responsibilities:</strong><br>
-        – Founder & Product Designer<br>
-        – Customer Service & Fulfillment<br>
-        – Branding & Marketing Lead<br>
-        – Community Engagement
-      </p>
-    </div>
+  <section id="board">
+    <h2>Board & Staff</h2>
+    <p>Meet the creative minds behind Chills Shop — a small but passionate team committed to design, innovation, and authentic connection through art.</p>
   </section>
 
   <section id="ways">
     <h2>Ways to Support</h2>
-    <p>Support us by sharing our site, purchasing a keychain, following on social media, or sending us a kind word. Every gesture keeps the beat going. 💖</p>
+    <p>If you love what we do and want to help, here are ways you can support our work. Your support keeps us going 💖</p>
+    <div class="donate-links">
+      <a href="https://www.paypal.com/donate/?hosted_button_id=F493UKMVQKH4E" class="paypal" target="_blank">Donate via PayPal</a>
+      <a href="https://cash.app/$RealChillsCo" class="cashapp" target="_blank">Support on CashApp</a>
+      <a href="https://ko-fi.com/chillsco" class="kofi" target="_blank">Buy me a Ko-Fi</a>
+      <a href="https://www.buymeacoffee.com/ChillsCo" class="bmc" target="_blank">Buy me a Coffee</a>
+    </div>
   </section>
 
   <section id="supporters">

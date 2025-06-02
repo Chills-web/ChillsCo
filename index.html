@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Quicksand', sans-serif;
       background: linear-gradient(to right, #ffe0f0, #fef6fb);
@@ -72,7 +74,9 @@
     .cashapp { background: #00c244; }
     .ko-fi { background: #29abe0; }
     .bmac { background: #ff813f; }
-    .donation-buttons a:hover { opacity: 0.9; }
+    .donation-buttons a:hover {
+      opacity: 0.9;
+    }
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -89,7 +93,9 @@
       transition: transform 0.2s;
       cursor: pointer;
     }
-    .gallery-item:hover { transform: scale(1.05); }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
     .gallery-item img {
       width: 100%;
       height: 100%;
@@ -108,16 +114,6 @@
     section p, blockquote {
       font-size: 1.1em;
       color: #444;
-    }
-    .team-member {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .team-member img {
-      width: 150px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 10px;
     }
     form input, form textarea {
       width: 100%;
@@ -160,13 +156,157 @@
       margin: 0 auto 30px;
       width: 120px;
     }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .team-member {
+      text-align: center;
+      max-width: 200px;
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .team-member h4 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+      color: #d45ba7;
+    }
+    .team-member p {
+      font-size: 0.95em;
+      color: #555;
+    }
     @media (max-width: 768px) {
-      nav { flex-direction: column; align-items: center; }
-      .about-img { float: none; display: block; margin: 0 auto 20px; }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
     }
   </style>
 </head>
 <body>
-<!-- Content updated, see canvas -->
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#support">Support</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="main-title">🎵 Chills Shop – Album Keychains</h1>
+  <p class="subtitle">Nostalgic keychains featuring your favorite artists. Handmade with care.</p>
+  <img class="mascot" src="monkey_mascot.png" alt="Chibi Monkey Mascot">
+
+  <div class="gallery">
+    <div class="gallery-item"><img src="Billie.jpg" alt="Billie"></div>
+    <div class="gallery-item"><img src="Drake.jpg" alt="Drake"></div>
+    <div class="gallery-item"><img src="Kanye.jpg" alt="Kanye"></div>
+    <div class="gallery-item"><img src="Kendrick.jpg" alt="Kendrick"></div>
+    <div class="gallery-item"><img src="Lady.jpg" alt="Lady"></div>
+    <div class="gallery-item"><img src="Morgan.jpg" alt="Morgan"></div>
+    <div class="gallery-item"><img src="Post.jpg" alt="Post"></div>
+    <div class="gallery-item"><img src="Rihanna.jpg" alt="Rihanna"></div>
+    <div class="gallery-item"><img src="Taylor.jpg" alt="Taylor"></div>
+    <div class="gallery-item"><img src="Tyler.jpg" alt="Tyler"></div>
+    <div class="gallery-item"><img src="Weeknd.jpg" alt="Weeknd"></div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <img class="about-img" src="Brandon.jpg" alt="Brandon Cavazos">
+    <p>Hi, I'm Brandon Cavazos — the heart behind Chills Shop. With a passion for music, design, and helping others, I turned my love for nostalgic albums into custom keychains you can carry anywhere. Every piece reflects creativity, heart, and hustle. When you support Chills Shop, you're supporting a dream and helping me continue to lift up others however I can.</p>
+  </section>
+
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <p>We’re a creative crew of dreamers and doers working behind the scenes to make Chills Shop shine.</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="Zazabillah.jpg" alt="Zazabillah">
+        <h4>Zazabillah</h4>
+        <p>Creative Design Architect – Designs everything your baby needs, leading the visual style and artistry of the shop.</p>
+      </div>
+      <div class="team-member">
+        <img src="Elsa.jpg" alt="Elsa">
+        <h4>Elsa</h4>
+        <p>Customer Experience Lead – Manages customer chats and ensures every shopper feels supported and valued.</p>
+      </div>
+      <div class="team-member">
+        <img src="Allison.jpg" alt="Allison">
+        <h4>Allison</h4>
+        <p>Design Support Specialist – Assists in bringing design concepts to life with Zaza’s creative direction.</p>
+      </div>
+      <div class="team-member">
+        <img src="Erlyn.jpg" alt="Erlyn">
+        <h4>Erlyn</h4>
+        <p>Executive Assistant – Works closely with Brandon to streamline operations and creative flow.</p>
+      </div>
+      <div class="team-member">
+        <img src="Kaylee.jpg" alt="Kaylee">
+        <h4>Kaylee</h4>
+        <p>Content Strategist – Develops social campaigns and keeps the Chills brand creative and fresh.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Your support keeps the music playing. Whether you're donating or spreading the word, it helps us grow. Thank you for being part of the Chills community!</p>
+    <div class="donation-buttons">
+      <a class="paypal" href="https://www.paypal.com/donate/?hosted_button_id=F493UKMVQKH4E" target="_blank">🅿️ PayPal</a>
+      <a class="cashapp" href="https://cash.app/$RealChillsCo" target="_blank">💸 CashApp</a>
+      <a class="ko-fi" href="https://ko-fi.com/chillsco" target="_blank">☕ Ko-fi</a>
+      <a class="bmac" href="https://buymeacoffee.com/ChillsCo" target="_blank">🍵 Buy Me A Coffee</a>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>What Customers Say</h2>
+    <blockquote>“Looks amazing. Feels high quality. Bought 3 already.” – Anna M.</blockquote>
+    <blockquote>“Perfect gift for my best friend. Super nostalgic!” – Jason L.</blockquote>
+    <blockquote>“Super unique and affordable. Support this artist!” – Nicole S.</blockquote>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p><strong>How long does shipping take?</strong><br>All items ship within 3–5 business days with tracking included.</p>
+    <p><strong>Are the keychains waterproof?</strong><br>Yes! They’re sealed and made to withstand light exposure to water.</p>
+    <p><strong>Can I request a custom artist or design?</strong><br>Absolutely! Message me using the contact form and I’ll see what I can do.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:thechillsco@gmail.com">thechillsco@gmail.com</a></p>
+    <form action="https://formspree.io/f/xwpbevjq" method="POST">
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <form action="https://formspree.io/f/xayrgrga" method="POST">
+      <h3>Join the Newsletter</h3>
+      <input type="email" name="email" placeholder="Enter your email to join" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Chills Shop. All rights reserved.
+  </footer>
 </body>
 </html>

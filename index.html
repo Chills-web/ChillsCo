@@ -156,54 +156,6 @@
       margin: 0 auto 30px;
       width: 120px;
     }
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .member-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .member-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.4s ease;
-    }
-    .member-info {
-      position: absolute;
-      bottom: -100%;
-      left: 0;
-      right: 0;
-      background: rgba(255,255,255,0.95);
-      color: #111;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.95em;
-      transition: bottom 0.4s ease;
-    }
-    .member-card:hover img {
-      transform: scale(1.1);
-    }
-    .member-card:hover .member-info {
-      bottom: 0;
-    }
-    .name {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 5px;
-    }
-    .role {
-      font-style: italic;
-      margin-bottom: 10px;
-      color: #888;
-    }
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -218,54 +170,98 @@
   </style>
 </head>
 <body>
-<!-- Everything above remains unchanged -->
-<!-- Replacing the team section with image-based layout -->
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#support">Support</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <h1 class="main-title">🎵 Chills Shop – Album Keychains</h1>
+  <p class="subtitle">Nostalgic keychains featuring your favorite artists. Handmade with care.</p>
+
+  <img class="mascot" src="monkey_mascot.png" alt="Chibi Monkey Mascot">
+
+  <div class="gallery">
+    <div class="gallery-item"><img src="Billie.jpg" alt="Billie"></div>
+    <div class="gallery-item"><img src="Drake.jpg" alt="Drake"></div>
+    <div class="gallery-item"><img src="Kanye.jpg" alt="Kanye"></div>
+    <div class="gallery-item"><img src="Kendrick.jpg" alt="Kendrick"></div>
+    <div class="gallery-item"><img src="Lady.jpg" alt="Lady"></div>
+    <div class="gallery-item"><img src="Morgan.jpg" alt="Morgan"></div>
+    <div class="gallery-item"><img src="Post.jpg" alt="Post"></div>
+    <div class="gallery-item"><img src="Rihanna.jpg" alt="Rihanna"></div>
+    <div class="gallery-item"><img src="Taylor.jpg" alt="Taylor"></div>
+    <div class="gallery-item"><img src="Tyler.jpg" alt="Tyler"></div>
+    <div class="gallery-item"><img src="Weeknd.jpg" alt="Weeknd"></div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <img class="about-img" src="Brandon.jpg" alt="Brandon Cavazos">
+    <p>Hi, I'm Brandon Cavazos — the heart behind Chills Shop. With a passion for music, design, and helping others, I turned my love for nostalgic albums into custom keychains you can carry anywhere. Every piece reflects creativity, heart, and hustle. When you support Chills Shop, you're supporting a dream and helping me continue to lift up others however I can.</p>
+  </section>
+
   <section id="team">
     <h2>Meet Our Team</h2>
     <p>We’re a creative crew of dreamers and doers working behind the scenes to make Chills Shop shine.</p>
-    <div class="team-grid">
-      <div class="member-card">
-        <img src="Allison.jpg" alt="Allison">
-        <div class="member-info">
-          <div class="name">Allison</div>
-          <div class="role">Design Production Assistant</div>
-          <p>Helps Zaza bring creative ideas to life. Always ready to lend a hand and keep the visuals flawless.</p>
-        </div>
-      </div>
-      <div class="member-card">
-        <img src="Elsa.jpg" alt="Elsa">
-        <div class="member-info">
-          <div class="name">Elsa</div>
-          <div class="role">Customer Experience Manager</div>
-          <p>Manages customer chats with warmth and care. Her priority? Making every interaction feel personal.</p>
-        </div>
-      </div>
-      <div class="member-card">
-        <img src="Erlyn.jpg" alt="Erlyn">
-        <div class="member-info">
-          <div class="name">Erlyn</div>
-          <div class="role">Strategic Content & Social Engagement Lead</div>
-          <p>Brandon’s assistant and content powerhouse—she bridges the brand to the world with strategy and soul.</p>
-        </div>
-      </div>
-      <div class="member-card">
-        <img src="Kaylee.jpg" alt="Kaylee">
-        <div class="member-info">
-          <div class="name">Kaylee</div>
-          <div class="role">Content Development & Brand Outreach</div>
-          <p>She’s the voice behind the brand—shaping stories, curating posts, and building our vibe from the ground up.</p>
-        </div>
-      </div>
-      <div class="member-card">
-        <img src="Zazabillah.jpg" alt="Zazabillah">
-        <div class="member-info">
-          <div class="name">Zazabillah</div>
-          <div class="role">Senior Concept Designer</div>
-          <p>Designs everything baby needs and then some. A visionary creator with a playful edge.</p>
-        </div>
-      </div>
+    <ul>
+      <li><strong>Brandon Cavazos</strong> – Founder, Lead Designer</li>
+      <li><strong>Luna Aiko</strong> – Content Editor & Social Media Specialist</li>
+      <li><strong>Jay Torres</strong> – Photographer & Visual Stylist</li>
+      <li><strong>Mina Chen</strong> – Customer Happiness & Support</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Your support keeps the music playing. Whether you're donating or spreading the word, it helps us grow. Thank you for being part of the Chills community!</p>
+    <div class="donation-buttons">
+      <a class="paypal" href="https://www.paypal.com/donate/?hosted_button_id=F493UKMVQKH4E" target="_blank">🅿️ PayPal</a>
+      <a class="cashapp" href="https://cash.app/$RealChillsCo" target="_blank">💸 CashApp</a>
+      <a class="ko-fi" href="https://ko-fi.com/chillsco" target="_blank">☕ Ko-fi</a>
+      <a class="bmac" href="https://buymeacoffee.com/ChillsCo" target="_blank">🍵 Buy Me A Coffee</a>
     </div>
   </section>
-<!-- Everything after the team section remains unchanged -->
+
+  <section id="reviews">
+    <h2>What Customers Say</h2>
+    <blockquote>“Looks amazing. Feels high quality. Bought 3 already.” – Anna M.</blockquote>
+    <blockquote>“Perfect gift for my best friend. Super nostalgic!” – Jason L.</blockquote>
+    <blockquote>“Super unique and affordable. Support this artist!” – Nicole S.</blockquote>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p><strong>How long does shipping take?</strong><br>All items ship within 3–5 business days with tracking included.</p>
+    <p><strong>Are the keychains waterproof?</strong><br>Yes! They’re sealed and made to withstand light exposure to water.</p>
+    <p><strong>Can I request a custom artist or design?</strong><br>Absolutely! Message me using the contact form and I’ll see what I can do.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:thechillsco@gmail.com">thechillsco@gmail.com</a></p>
+    <form action="https://formspree.io/f/xwpbevjq" method="POST">
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <form action="https://formspree.io/f/xayrgrga" method="POST">
+      <h3>Join the Newsletter</h3>
+      <input type="email" name="email" placeholder="Enter your email to join" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Chills Shop. All rights reserved.
+  </footer>
 </body>
 </html>
